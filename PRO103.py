@@ -26,8 +26,6 @@ class FileEventHandler(FileSystemEventHandler):
     def on_moved(self, event):
         print(f"Someone moved {event.src_path} to {event.dest_path}")
         
-
-
 # Initialize Event Handler Class
 event_handler = FileEventHandler()
 
